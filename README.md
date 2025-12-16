@@ -21,7 +21,7 @@ This dashboard aims to support Walmart’s operational and merchandising decisio
 
 ## Dataset
 Dataset used for this analysis:
-🔗 [https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+🔗 [ibm-hr-analytics-attrition-dataset](https://github.com/keilazx/ibm_hr_analytics/blob/c74c89cb07ee907d2cf04bdbbcf33d3b5a1ecde1/IBM%20HR%20Analytics.pdf)
 
 ## Methodology
 1. Data cleaning & preparation (Power Query + DAX)
@@ -47,13 +47,13 @@ Dataset used for this analysis:
 - Established a relationship between fact and dimension tables using a composite key (DIM_Position) to enable role- and department-level analysis while maintaining a star-schema structure.
 
 4. Dashboard Development
-- The dashboard was developed in Power BI following prioritizing clarity and decision support for HR managers.
 - The dashboard was structured into three thematic pages: Overview, Demographics, and Employee Experience. This allows users to progress from high-level diagnosis to root-cause exploration.
-- The development process focused on translating HR business questions into measurable indicators
+- The development process focused on translating HR business questions into measurable indicators.
+- Included a filter pane in the three pages, making it visible when clicked on the Filter button.
 - Key design principles applied:
 - - Attrition Rate was used as the primary metric across visuals to normalize comparisons between employee groups of different sizes.
 - - Raw employee counts were included only as contextual information (tables, tooltips, KPIs).
-- -  Conditional formatting was applied selectively to highlight critical risk levels without overwhelming the user.
+- - Conditional formatting was applied selectively to highlight critical risk levels without overwhelming the user.
 
 
 ## Screenshot
@@ -62,26 +62,24 @@ Dataset used for this analysis:
 <img width="800" alt="Overview with filter" src="https://github.com/user-attachments/assets/0c0f3c8b-a556-4d46-9e80-0b63eaba75b1" />
 
 
-
-## Dashboard link
-
+## Dashboard PDF link
+🔗 [Link](https://github.com/keilazx/ibm_hr_analytics/blob/4fd546cdb7cac0849987ee12ac96d88c41da8be4/IBM%20HR%20Analytics.pdf)
 
 ## Key Insights
-1. Holiday vs. Non-Holiday Weeks
-- Holiday weeks consistently produce lower average sales across all years.
-- This suggests inventory, staffing, or promotional strategies during holiday periods may require review.
-2. Performance Variability Across Stores
-- Significant disparities exist:
-- - Top-performing stores exceed $300M in total sales
-- - Lower-performing stores fall below $80M
-- This highlights opportunities to investigate best practices and support struggling locations.
-
-3. Impact of External Factors
-- Temperature, fuel price, CPI, and unemployment showed no strong correlation with weekly sales.
-- Internal drivers—such as store operations, assortment, pricing, or regional customer behavior—may be more influential.
+- The overall attrition rate is of 19%. The HR and Sales department's attrition rate is above the overall rate, with 24% and 26% respectively; whereas the Research and Development (R&D) has a 16% attrition rate.
+- Employees in the age group of 18-29 had the highest attrition rate (39%). There is no significant difference between male and female  attrition rate, with the former having a 20% rate and the latter a 17% rate.
+- There is a relationship between salary and attrition. People with an average salary below than $3,000 tend to have higher attrition rates which suggests that as salaries go up, the attrition rate falls under the 7% attrition rate. Nonetheless, people with an average income of $6,924 - which is above overall average monthly income - have an attrition rate of 21%.
+- Education level shows a similar tendencies of attrition for staff with bellow college to master's degree, ranging from 17% to 22%. Those with Doctor have an attrition of 12%.
+- Employees with less than 2 years working for the company have an attrition rate of 96%. Staff with over 2 years have an attrition that goes from 28% to 8% - this latter rate belongs to staff that have 20+ years working for the company.
+- Employees who work overtime consistently show lower satisfaction levels and higher attrition risk compared to those who do not. The distribution skews heavily toward the “At risk” category among overtime workers, while “Engaged” employees are underrepresented.
 
 ## Recommendations
-- Adjust inventory planning, staffing, or marketing efforts to improve holiday period performance.
-- Identify operational differences that may explain large sales gaps.
-- Since external factors show little correlation, prioritize pricing, merchandising, and in-store experience improvements.
-- Enhance forecasting models: Incorporate internal metrics (store size, traffic, promotions) that may better explain variability.
+- Track early warning signals (overtime, low satisfaction, manager changes) specifically for new employees.
+- Reassess salary competitiveness for employees earning below $3,000, especially in Sales and HR.
+- Complement pay with non-monetary benefits (flexibility, learning budgets) where immediate salary increases are not feasible.
+- Create clearer career paths, skill development programs, and internal mobility options for early-career talent.
+- Increase feedback frequency and growth conversations for employees between 18-29.
+- Strengthen engagement among high performers.
+- High and very high performers showing “at risk” satisfaction signals suggest burnout or misaligned rewards.
+- Introduce recognition, advancement opportunities, or role enrichment for top performers before dissatisfaction converts into attrition.
+- Since attrition decreases at higher education levels, invest in upskilling and tuition support for existing employees.
